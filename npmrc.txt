@@ -3,3 +3,7 @@ python=python2.7
 proxy=null
 https-proxy null
 registry=http://registry.npmjs.org/
+
+Located in user profile
+Also in node_modules/npm/.npmrc
+

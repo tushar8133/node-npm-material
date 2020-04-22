@@ -1,0 +1,80 @@
+git clone https://github.com/tushar8133/test3.git
+git push -d origin feature/DRDP-30   //remote destroy 
+git branch -d feature/DRDP-30   //local destroy 
+git checkout -b feature/DRDP-882   //To create new branch 
+git checkout feature/DRDP-882   //To switch between branches 
+git status    // do this after every step 
+git diff  // to see the difference in file 
+git add pathoffile   ||  git add .
+git commit -m "DRDP-882"
+git push origin feature/DRDP-884 
+
+git fetch origin
+
+PASSWORD PROBLEM
+git config --global credential.helper wincred
+git config --global --unset user.password
+git pull https://myuser@bitbucket.org/mypath/myrepo.git
+
+SSL CERTIFICATE PROBLEM
+git config --global http.sslVerify false
+
+CREATE FILE
+touch file.txt
+
+TO OPEN A FILE
+start filename.txt
+
+TO OPEN CURRENT FOLDER
+start .
+
+TO CREATE A FOLDER
+mkdir foldername1 foldername2
+
+RENAME CURRENT BRANCH
+git branch -m new_name
+
+PUSH LOCAL REPOSITORY TO GITHUB
+$ git remote add origin git@github.com:username/new_repo
+$ git push -u origin master
+
+************************************************************************
+
+git log
+clear
+git difftool
+git show HEAD
+git difftool HEAD
+git difftool HEAD~2 HEAD~1
+
+git checkout -- .
+git revert -n
+get reset
+
+git gui
+
+
+fast forwards
+head problems
+rebasing
+
+************************************************************************
+*********** C:\Users\tushar.ku\.gitconfig ******************************
+[diff]
+    tool = bc4
+[difftool]
+    prompt = false
+[difftool "bc4"]
+    cmd = \"C:/Program Files/Beyond Compare 4/Bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
+[merge]
+    tool = bc4
+[mergetool]
+    prompt = false
+    keepBackup = false
+[mergetool "bc4"]
+    cmd = \"C:/Program Files/Beyond Compare 4/Bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+    trustExitCode = true
+[alias]
+    dt = difftool
+    mt = mergetool
+*************************************************************************
