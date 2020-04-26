@@ -12,6 +12,10 @@ git push origin feature/DRDP-884
 git fetch origin
 
 TO LIST ALL BRANCH NAMES:
+git fetch --all
+git branch -a
+OR
+git fetch --all
 git branch -r
 
 PASSWORD PROBLEM
