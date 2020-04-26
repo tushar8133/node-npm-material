@@ -11,6 +11,9 @@ git push origin feature/DRDP-884
 
 git fetch origin
 
+TO LIST ALL BRANCH NAMES:
+git branch -r
+
 PASSWORD PROBLEM
 git config --global credential.helper wincred
 git config --global --unset user.password
