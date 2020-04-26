@@ -18,6 +18,13 @@ OR
 git fetch --all
 git branch -r
 
+TO CLEAR ADDED FILES OR DIRECTORIES
+git clear -n ...to check what is going to be deleted
+git clear -f ...dont remember what it does
+git clear -fd ...to delete files
+git clear -fx ...to delete folders
+git clear -fX ...not sure what it does
+
 PASSWORD PROBLEM
 git config --global credential.helper wincred
 git config --global --unset user.password
@@ -48,7 +55,8 @@ $ git push -u origin master
 ************************************************************************
 
 git log
-clear
+git reflog
+clear [this is not git command]
 git difftool
 git show HEAD
 git difftool HEAD
